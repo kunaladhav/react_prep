@@ -1,3 +1,3 @@
-<h1>Learning React </h1>
+#Learning React
 
-<p>Learning React With Project based Approach </p>
+Learning React With Project based Approach
