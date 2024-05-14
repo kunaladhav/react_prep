@@ -30,7 +30,7 @@
     width: 100%;
 }
 
-.restaurantList{
+.restaurant-list{
     display: flex;
     flex-wrap: wrap;
 }
