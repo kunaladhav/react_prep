@@ -34,3 +34,12 @@
     display: flex;
     flex-wrap: wrap;
 }
+
+.shimmer-card{
+    width: 220px;
+    height: 480px;
+    background: lightgray;
+    margin: 10px;
+}
+
+
