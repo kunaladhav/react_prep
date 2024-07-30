@@ -1,0 +1,54 @@
+* {
+  color: #02060cba;
+  background-color: #fff;
+  font-family: Bricolage Grotesque, sans-serif;
+  font-weight: 300;
+}
+
+.header {
+  border: 1px solid #000;
+  justify-content: space-between;
+  margin: 10px;
+  display: flex;
+}
+
+.nav-items > ul {
+  list-style-type: none;
+  display: flex;
+}
+
+.nav-items > ul > li {
+  padding: 10px;
+}
+
+.logo {
+  width: 100px;
+}
+
+.card {
+  border: 1px solid #000;
+  width: 200px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.card > img {
+  width: 100%;
+}
+
+.restaurant-list {
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.shimmer-card {
+  background: #d3d3d3;
+  width: 220px;
+  height: 480px;
+  margin: 10px;
+}
+
+.menu {
+  display: flex;
+}
+/*# sourceMappingURL=index.9e4c6fd2.css.map */
