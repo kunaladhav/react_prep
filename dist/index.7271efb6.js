@@ -36095,6 +36095,8 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _config = require("../config");
 const RestaurantCard = ({ name, cuisines, avgRating, cloudinaryImageId })=>{
+    const displayCuisines = cuisines.slice(0, 2);
+    const remainingCusines = cuisines.length - displayCuisines.length;
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "card w-52 p-2 m-5 shadow-md",
         children: [
@@ -36102,7 +36104,7 @@ const RestaurantCard = ({ name, cuisines, avgRating, cloudinaryImageId })=>{
                 src: (0, _config.IMG_CDN_URL) + cloudinaryImageId
             }, void 0, false, {
                 fileName: "src/components/RestaurantCard.js",
-                lineNumber: 9,
+                lineNumber: 11,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
@@ -36110,15 +36112,18 @@ const RestaurantCard = ({ name, cuisines, avgRating, cloudinaryImageId })=>{
                 children: name
             }, void 0, false, {
                 fileName: "src/components/RestaurantCard.js",
-                lineNumber: 10,
+                lineNumber: 12,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
                 className: "text-sm",
-                children: cuisines.join(", ")
-            }, void 0, false, {
+                children: [
+                    displayCuisines.join(", "),
+                    remainingCusines > 0 && "..."
+                ]
+            }, void 0, true, {
                 fileName: "src/components/RestaurantCard.js",
-                lineNumber: 11,
+                lineNumber: 13,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
@@ -36128,13 +36133,13 @@ const RestaurantCard = ({ name, cuisines, avgRating, cloudinaryImageId })=>{
                 ]
             }, void 0, true, {
                 fileName: "src/components/RestaurantCard.js",
-                lineNumber: 12,
+                lineNumber: 19,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/RestaurantCard.js",
-        lineNumber: 8,
+        lineNumber: 10,
         columnNumber: 10
     }, undefined);
 };

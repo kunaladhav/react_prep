@@ -705,10 +705,6 @@
     margin: calc(var(--spacing) * 2);
   }
 
-  .m-2\.5 {
-    margin: calc(var(--spacing) * 2.5);
-  }
-
   .m-5 {
     margin: calc(var(--spacing) * 5);
   }
@@ -761,22 +757,6 @@
     height: calc(var(--spacing) * 28);
   }
 
-  .h-80 {
-    height: calc(var(--spacing) * 80);
-  }
-
-  .h-\[\/338px\] {
-    height:  / 338px;
-  }
-
-  .h-\[338px\] {
-    height: 338px;
-  }
-
-  .w-2xl {
-    width: var(--container-2xl);
-  }
-
   .w-52 {
     width: calc(var(--spacing) * 52);
   }
@@ -797,16 +777,12 @@
     transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
   }
 
+  .cursor-pointer {
+    cursor: pointer;
+  }
+
   .resize {
     resize: both;
-  }
-
-  .flex-col {
-    flex-direction: column;
-  }
-
-  .flex-row {
-    flex-direction: row;
   }
 
   .flex-wrap {
@@ -821,10 +797,6 @@
     justify-content: center;
   }
 
-  .rounded-lg {
-    border-radius: var(--radius-lg);
-  }
-
   .rounded-sm {
     border-radius: var(--radius-sm);
   }
@@ -832,6 +804,10 @@
   .border {
     border-style: var(--tw-border-style);
     border-width: 1px;
+  }
+
+  .border-black {
+    border-color: var(--color-black);
   }
 
   .bg-amber-50 {
@@ -866,9 +842,9 @@
     padding-block: calc(var(--spacing) * 10);
   }
 
-  .text-lg {
-    font-size: var(--text-lg);
-    line-height: var(--tw-leading, var(--text-lg--line-height));
+  .text-3xl {
+    font-size: var(--text-3xl);
+    line-height: var(--tw-leading, var(--text-3xl--line-height));
   }
 
   .text-sm {
@@ -893,18 +869,6 @@
 
   .text-amber-50 {
     color: var(--color-amber-50);
-  }
-
-  .text-amber-500 {
-    color: var(--color-amber-500);
-  }
-
-  .text-gray-500 {
-    color: var(--color-gray-500);
-  }
-
-  .text-orange-500 {
-    color: var(--color-orange-500);
   }
 
   .text-white {
@@ -990,18 +954,6 @@
   .focus\:outline-amber-600 {
     &:focus {
       outline-color: var(--color-amber-600);
-    }
-  }
-
-  .focus\:outline-amber-700 {
-    &:focus {
-      outline-color: var(--color-amber-700);
-    }
-  }
-
-  .focus\:outline-blue-700 {
-    &:focus {
-      outline-color: var(--color-blue-700);
     }
   }
 }
