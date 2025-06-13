@@ -1,3 +1,4 @@
+import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 
 export const Title = () => (
@@ -13,6 +14,9 @@ export const Title = () => (
 // React Components
 
 const Header = () => {
+  const cartItems = useSelector((store) => store.cart.items);
+  console.log(cartItems);
+
   return (
     <div className="flex justify-between bg-orange-500 shadow-lg">
       <Title />
@@ -29,9 +33,12 @@ const Header = () => {
           <li className="px-2 text-amber-50">
             <Link to={"/contact"}>Contact</Link>
           </li>
-          <li className="px-2 text-amber-50">Cart</li>
+
           <li className="px-2 text-amber-50">
             <Link to="/instamart">Instamart</Link>
+          </li>
+          <li className="px-2 text-amber-50">
+            <Link to="/cart">Cart - {cartItems.length} items</Link>
           </li>
         </ul>
       </div>
