@@ -30,24 +30,27 @@ const RestaurantMenu = () => {
   return !restaurant ? (
     <Shimmer />
   ) : (
-    <div className="flex">
+    <div className="flex-column justify-self-center ">
       <div>
-        <h1>Restaurant id: {resid}</h1>
-        <h2>{restaurant.name}</h2>
-        <img src={IMG_CDN_URL + restaurant.cloudinaryImageId} />
+        <h1 className="hidden">Restaurant id: {resid}</h1>
+        <img
+          className="size-100"
+          src={IMG_CDN_URL + restaurant.cloudinaryImageId}
+        />
+        <h2 className="text-3xl ">{restaurant.name}</h2>
         <h3>{restaurant.area}</h3>
         <h3>{restaurant.city}</h3>
         <h3>{restaurant.avgRating} Stars</h3>
         <h3>{restaurant.costForTwoMsg} </h3>
       </div>
       <div className="p-4">
-        <h2>Menu</h2>
-        <ul>
+        <h2 className="justify-center">Menu</h2>
+        <ul className="justify-between">
           {resMenu.map((item, index) => (
-            <li key={index}>
-              {item.name} -{" "}
+            <li key={index} className="flex justify-between p-2">
+              {item.name}
               <button
-                className="p-1 bg-green-100"
+                className="p-1 bg-green-100 "
                 onClick={() => addFoodItem(item)}
               >
                 Add

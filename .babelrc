@@ -1,2 +1,12 @@
+// babel.config.json
 {
+  "env": {
+    "test": { // This block will only be active when NODE_ENV or BABEL_ENV is 'test'
+      "presets": [
+        // This configuration is specifically for your testing environment (Jest/Node.js)
+        ["@babel/preset-env", {"targets": {"node": "current"}}],
+        ["@babel/preset-react", {"runtime": "automatic"}]
+      ]
+    }
+  }
 }
