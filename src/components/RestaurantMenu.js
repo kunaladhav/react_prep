@@ -48,7 +48,7 @@ const RestaurantMenu = () => {
         <ul className="justify-between">
           {resMenu.map((item, index) => (
             <li key={index} className="flex justify-between p-2">
-              {item.name}
+              {item.name} {console.log(item.category)}
               <button
                 className="p-1 bg-green-100 "
                 onClick={() => addFoodItem(item)}

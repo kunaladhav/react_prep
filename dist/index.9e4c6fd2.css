@@ -632,14 +632,6 @@
     position: static;
   }
 
-  .z-0 {
-    z-index: 0;
-  }
-
-  .z-1 {
-    z-index: 1;
-  }
-
   .\!container {
     width: 100% !important;
 
@@ -801,10 +793,6 @@
     flex-wrap: wrap;
   }
 
-  .items-center {
-    align-items: center;
-  }
-
   .justify-between {
     justify-content: space-between;
   }
@@ -813,16 +801,8 @@
     justify-content: center;
   }
 
-  .justify-end {
-    justify-content: flex-end;
-  }
-
   .justify-self-center {
     justify-self: center;
-  }
-
-  .justify-self-end {
-    justify-self: flex-end;
   }
 
   .rounded-sm {
@@ -858,10 +838,6 @@
     background-color: var(--color-orange-500);
   }
 
-  .object-center {
-    object-position: center;
-  }
-
   .p-1 {
     padding: calc(var(--spacing) * 1);
   }
@@ -888,10 +864,6 @@
 
   .py-10 {
     padding-block: calc(var(--spacing) * 10);
-  }
-
-  .align-middle {
-    vertical-align: middle;
   }
 
   .text-3xl {

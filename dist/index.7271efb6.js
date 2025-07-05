@@ -37856,6 +37856,8 @@ const RestaurantMenu = ()=>{
                                 className: "flex justify-between p-2",
                                 children: [
                                     item.name,
+                                    " ",
+                                    console.log(item.category),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                                         className: "p-1 bg-green-100 ",
                                         onClick: ()=>addFoodItem(item),
